@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+	<!-----------------------------------------------------------
+		CIS 124: Intro to Javascript
+		Passenger Counter (Scrimba)
+		https://scrimba.com/learn/learnjavascript/setting-up-our-javascript-file-co8c8428fa88013351d68c967
+		Dominique Tepper, 15OCT2022
+	------------------------------------------------------------>
+<html lang="en">
+
+	<head>
+		<title>Passenger Counter</title>
+		<meta charset="utf-8">
+
+		<!-- External CSS link -->
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!-- Google Fonts embed code -->
+		<link href="https://fonts.googleapis.com/css2?family=Jost&family=Permanent+Marker&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- Header. Dominique Tepper, 15OCT2022 ---------------->
+		<header>
+			<h1>Passenger Counter</h1>
+		</header>
+
+		<!-- Main. Dominique Tepper, 15OCT2022 ------------------>
+		<main>
+			<!--
+				Welcome greeting container. Tepper, 24OCT2022
+			-->
+			<div class = "welcome">
+				<h4 id="welcome-el"></h4>
+			</div>
+
+			<!--
+				Counter container. Tepper, 15OCT2022
+			-->
+			<div class="container">
+				<h2>Row Counter</h2>
+				<h2 id="count-el">0</h2>
+
+				<!-- 
+					Step 3. Setup JS file. Tepper, 15OCT2022
+					Step 7. Create increment button id="increment-btn"
+					Step 8. define onclick event listener
+				-->
+				<button id="increment-btn" onclick="increment()">INCREMENT</button>
+				
+				<!-- Step 13. Create a save button "save-btn", calls save() function. Tepper, 15OCT2022 -->
+				<button id="save-btn" onclick="save()">SAVE</button>			
+
+				<!-- Step 13 (Scrimba Step 26). Create the Save feature that also shows the previous entries -->
+				<p id="save-el">Previous counts: </p>
+
+				<script src="index.js"></script>
+
+			</div>
+
+			<!--
+				spacer between counter and footer. Tepper, 24OCT2022
+			-->
+			<div class = "welcome">
+				<h4></h4>
+			</div>
+		</main>
+
+		<!-- Footer. Dominique Tepper ----------------->
+		<!-- v2.24OCT2022, v1.15OCT2022 --------------->
+		<footer>
+			<p>CIS 124. Week 3 Scrimba Exercises v2. Dominique Tepper, 24OCT2022.</p>
+		</footer>
+	</body>
+</html>
